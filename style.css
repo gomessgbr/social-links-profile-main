@@ -27,10 +27,10 @@ img{
 }
 
 .titleArea {
-  width: fit-content;
- display: flex;
- flex-direction:column;
+ width: fit-content;
+ display: grid;
  font-family: Inter;
+ place-items: center;
 }
 
 
@@ -58,7 +58,7 @@ img{
   gap:16px;
 }
 
-.buttonArea > button{
+.buttonArea > a{
   background-color: #333333;
   font-size: 14px;
   color: #fff;
@@ -67,10 +67,13 @@ img{
   border-radius: 8px;
   min-width: 304px;
   min-height: 45px;
+  text-decoration: none;
+  display: grid;
+  place-items: center;
 }
 
 
-.buttonArea > button:hover{
+.buttonArea > a:hover{
   background-color: #C4F82A;
   cursor:pointer;
 }
